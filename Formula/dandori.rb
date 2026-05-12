@@ -5,21 +5,21 @@
 class Dandori < Formula
   desc "Lightweight CLI outer harness for managing AI agent dev teams."
   homepage "https://github.com/phuc-nt/dandori-cli"
-  version "0.11.2"
+  version "0.12.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/phuc-nt/dandori-cli/releases/download/v0.11.2/dandori_darwin_amd64.tar.gz"
-      sha256 "2f762875ee31d5023f3c0ca4b3927c599665296478df68112482eba0931bd42f"
+      url "https://github.com/phuc-nt/dandori-cli/releases/download/v0.12.0/dandori_darwin_amd64.tar.gz"
+      sha256 "72c18b6d76ec973737c14e288e8c7dddbbc1c565ce69abadf648d8a6551fea43"
 
       define_method(:install) do
         bin.install "dandori"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/phuc-nt/dandori-cli/releases/download/v0.11.2/dandori_darwin_arm64.tar.gz"
-      sha256 "2b11810595c8e106b98bdcc962f21f254b05b78388a8527d4dae2ff03175c336"
+      url "https://github.com/phuc-nt/dandori-cli/releases/download/v0.12.0/dandori_darwin_arm64.tar.gz"
+      sha256 "f14c784faf155b941f6e6b9307c401f8298df19ae4f86f2dc0c8da0e9357b6e7"
 
       define_method(:install) do
         bin.install "dandori"
@@ -29,15 +29,15 @@ class Dandori < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/phuc-nt/dandori-cli/releases/download/v0.11.2/dandori_linux_amd64.tar.gz"
-      sha256 "3d016715efb43d9bc942277623613fa75bdd6f1ae53a4c3d55a73b30c0e06b12"
+      url "https://github.com/phuc-nt/dandori-cli/releases/download/v0.12.0/dandori_linux_amd64.tar.gz"
+      sha256 "460d5041c35cbe8adbe64501dd5f50304120b3297f9d7600880e42b6aacbc1fc"
       define_method(:install) do
         bin.install "dandori"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/phuc-nt/dandori-cli/releases/download/v0.11.2/dandori_linux_arm64.tar.gz"
-      sha256 "fbf6e9af99505b9bebfc0dec3673c0fe99067c74a608468179bd993514e53947"
+      url "https://github.com/phuc-nt/dandori-cli/releases/download/v0.12.0/dandori_linux_arm64.tar.gz"
+      sha256 "596ee5047efe7222f7dcdc7f36ddbc4212a976c9057d0c8751b269dec5282763"
       define_method(:install) do
         bin.install "dandori"
       end
